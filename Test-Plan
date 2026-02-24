@@ -1,0 +1,107 @@
+Test Plan Template (Manual QA – E-commerce Demo)
+1. Objective
+
+The purpose of this test plan is to validate the core functionality, usability, and reliability of the e-commerce web application.
+The goal is to identify defects that may affect user experience, checkout flow, and data integrity.
+
+2. Scope
+In Scope
+
+User Registration
+
+User Login / Logout
+
+Product Search
+
+Product Details Page
+
+Add to Cart
+
+Update Cart
+
+Checkout Process
+
+Form Validations
+
+Basic UI validation
+
+Out of Scope
+
+Performance testing
+
+Security testing
+
+Payment gateway real transactions
+
+Mobile app testing (if only web)
+
+3. Test Strategy
+
+The following testing approaches will be used:
+
+Functional Testing
+
+Verification of all main business flows and system behavior.
+
+Negative Testing
+
+Validation of invalid inputs and unexpected user actions.
+
+Boundary Value Testing
+
+Testing input limits (e.g., minimum/maximum characters).
+
+Exploratory Testing
+
+Session-based exploration to identify edge cases and usability issues.
+
+4. Test Environment
+
+Browser: Chrome (latest version)
+
+OS: Windows 10
+
+Resolution: 1920x1080
+
+Test Data: Demo user accounts
+
+5. Risk Analysis
+Risk	Impact	Mitigation
+Checkout failure	High	Detailed test cases for checkout
+Form validation issues	Medium	Negative & boundary tests
+Session expiration bugs	Medium	Session testing scenarios
+6. Entry Criteria
+
+Application is deployed
+
+Test environment accessible
+
+Requirements are available
+
+7. Exit Criteria
+
+All high severity defects addressed
+
+All planned test cases executed
+
+Test summary report completed
+
+8. Deliverables
+
+Test Plan
+
+Test Cases
+
+Bug Reports
+
+Traceability Matrix
+
+Test Summary Report
+
+9. Assumptions
+
+Application is intended for desktop users
+
+All prices are fixed and not dynamically updated
+
+No real payment processing occurs in demo version
