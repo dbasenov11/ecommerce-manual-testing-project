@@ -4,58 +4,69 @@
 
 ## BUG-01
 
-**Title:** User is not redirected after successful login  
-**Environment:** Chrome, Windows 10  
+**Title:** User remains on login page after successful authentication  
 **Severity:** High  
 **Priority:** High  
+**Environment:** Chrome / Windows 10  
+
+### Description:
+After submitting valid credentials, the user is not redirected to the account dashboard.
 
 ### Steps to Reproduce:
-1. Open login page  
-2. Enter valid credentials  
-3. Click Login  
+1. Navigate to Login page
+2. Enter valid email and password
+3. Click Login
 
 ### Expected Result:
-User should be redirected to account dashboard.
+User is redirected to account dashboard.
 
 ### Actual Result:
-User remains on login page without error message.
+Page refreshes but remains on Login screen without error message.
+
+### Impact:
+Prevents access to user account and blocks further actions.
 
 ---
 
 ## BUG-02
 
-**Title:** No validation message when submitting empty checkout form  
-**Environment:** Chrome, Windows 10  
-**Severity:** High  
+**Title:** Checkout form allows submission with empty required fields  
+**Severity:** Critical  
 **Priority:** High  
 
 ### Steps:
-1. Add product to cart  
-2. Proceed to checkout  
-3. Leave required fields empty  
-4. Click Confirm  
+1. Add product to cart
+2. Proceed to checkout
+3. Leave mandatory fields empty
+4. Click Confirm Order
 
 ### Expected:
-Validation errors displayed.
+Inline validation errors displayed for required fields.
 
 ### Actual:
-Page refreshes without feedback.
+Order is processed without validation.
+
+### Impact:
+May lead to incomplete orders and data inconsistency.
 
 ---
 
 ## BUG-03
 
-**Title:** Cart allows negative quantity value  
+**Title:** Cart accepts negative quantity values  
 **Severity:** Medium  
 **Priority:** Medium  
 
 ### Steps:
-1. Add product to cart  
-2. Enter "-1" as quantity  
-3. Update cart  
+1. Add product to cart
+2. Enter "-1" in quantity field
+3. Update cart
 
 ### Expected:
-System prevents invalid quantity.
+System should prevent negative values.
 
 ### Actual:
-Cart accepts negative value.
+Cart updates with negative total price.
+
+### Impact:
+Incorrect order calculation and potential financial discrepancies.
