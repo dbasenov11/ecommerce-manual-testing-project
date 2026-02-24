@@ -1,14 +1,16 @@
 # Test Cases
 
-| TC ID | Title | Preconditions | Steps | Expected Result | Priority |
-|-------|-------|--------------|-------|----------------|----------|
-| TC-01 | User Registration with valid data | User not logged in | 1. Open registration page 2. Enter valid data 3. Submit | User account created successfully | High |
-| TC-02 | Registration with invalid email | Registration page open | 1. Enter invalid email format 2. Submit | Error message displayed | High |
-| TC-03 | Login with valid credentials | User registered | 1. Enter valid credentials 2. Login | User redirected to account page | High |
-| TC-04 | Login with invalid password | User registered | 1. Enter wrong password 2. Login | Error message displayed | High |
-| TC-05 | Add product to cart | Product page open | 1. Click Add to Cart | Product added to cart | High |
-| TC-06 | Update product quantity | Product in cart | 1. Change quantity 2. Update cart | Quantity updated correctly | Medium |
-| TC-07 | Remove product from cart | Product in cart | 1. Click Remove | Product removed | Medium |
-| TC-08 | Checkout with valid data | Product in cart | 1. Proceed to checkout 2. Fill valid details 3. Confirm | Order successfully placed | High |
-| TC-09 | Checkout with empty required fields | On checkout page | 1. Leave required fields empty 2. Submit | Validation errors displayed | High |
-| TC-10 | Search product by name | Home page open | 1. Enter product name 2. Search | Relevant results displayed | Medium |
+| TC ID | Scenario | Preconditions | Steps | Expected Result | Priority |
+|-------|----------|--------------|-------|----------------|----------|
+| TC-01 | Successful user registration | User not logged in | Enter valid data → Submit | Account created & confirmation shown | High |
+| TC-02 | Registration with existing email | Email already registered | Enter existing email → Submit | Proper error message displayed | High |
+| TC-03 | Successful login | Valid user exists | Enter valid credentials → Login | Redirect to dashboard | High |
+| TC-04 | Login with incorrect password | Valid user exists | Enter wrong password → Login | Error message shown | High |
+| TC-05 | Session expiration after logout | User logged in | Logout → Navigate back | User cannot access protected page | High |
+| TC-06 | Add multiple products to cart | Product list available | Add 2 products | Cart updates correctly | High |
+| TC-07 | Cart total price calculation | Product in cart | Change quantity | Total recalculates correctly | High |
+| TC-08 | Negative quantity input | Product in cart | Enter -1 | System prevents invalid input | Medium |
+| TC-09 | Successful checkout | Product in cart | Complete form with valid data | Order confirmation displayed | High |
+| TC-10 | Checkout with missing required fields | On checkout page | Leave mandatory fields empty | Inline validation messages shown | High |
+| TC-11 | Search with valid keyword | Home page | Enter product name | Relevant results displayed | Medium |
+| TC-12 | Search with no results | Home page | Enter random string | “No results” message displayed | Low |
