@@ -1,24 +1,29 @@
 # Test Summary Report
 
 ## Overview
-Testing focused on core business functionality of the e-commerce web application.
 
-## Test Execution Summary
-- Total Test Cases: 10
-- Passed: 7
+Testing covered critical business flows of the e-commerce web application, with emphasis on revenue-impacting areas.
+
+## Execution Results
+
+- Total Test Cases: 12
+- Passed: 9
 - Failed: 3
 - Blocked: 0
 
-## Defects Summary
-- High Severity: 2
-- Medium Severity: 1
-- Low Severity: 0
+## Defect Distribution
 
-## Key Findings
-- Login redirection issue
-- Missing checkout validation
-- Negative quantity accepted in cart
+- Critical: 1
+- High: 1
+- Medium: 1
+- Low: 0
 
-## Conclusion
-The application contains high-impact issues in login and checkout flow.  
-Fixing these defects is recommended before production release.
+## Key Observations
+
+- Checkout validation gaps present significant business risk.
+- Authentication flow contains redirection issue.
+- Cart logic lacks input validation control.
+
+## Recommendation
+
+Application should not proceed to production before resolving Critical and High severity defects in checkout and authentication flows.
