@@ -1,0 +1,12 @@
+# Defect Lifecycle (Applied to Project)
+
+1. **New** – Bug discovered, reported in Bug Report.
+2. **Assigned** – Developer assigned for investigation.
+3. **Open / In Progress** – Developer begins work.
+4. **Fixed / Resolved** – Issue corrected in dev environment.
+5. **Retest** – QA verifies fix according to test steps.
+6. **Closed** – Verified and accepted; defect resolved.
+7. **Reopen** – If issue persists after retest.
+
+## Example from Project
+- BUG-02 (Checkout empty fields): New → Assigned → Fixed → Retest → Closed
