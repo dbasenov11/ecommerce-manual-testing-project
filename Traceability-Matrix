@@ -1,9 +1,9 @@
 # Traceability Matrix
 
-| Requirement ID | Description | Test Case ID | Bug ID |
-|---------------|------------|--------------|--------|
-| R-01 | User registration | TC-01, TC-02 | - |
-| R-02 | User login | TC-03, TC-04 | BUG-01 |
-| R-03 | Cart functionality | TC-05, TC-06, TC-07 | BUG-03 |
-| R-04 | Checkout process | TC-08, TC-09 | BUG-02 |
-| R-05 | Search functionality | TC-10 | - |
+| Requirement | Description | Test Cases | Defects |
+|-------------|------------|------------|---------|
+| R-01 | User Registration | TC-01, TC-02 | - |
+| R-02 | Authentication | TC-03, TC-04, TC-05 | BUG-01 |
+| R-03 | Cart Management | TC-06, TC-07, TC-08 | BUG-03 |
+| R-04 | Checkout Flow | TC-09, TC-10 | BUG-02 |
+| R-05 | Search Functionality | TC-11, TC-12 | - |
