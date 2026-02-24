@@ -1,0 +1,24 @@
+# Test Summary Report
+
+## Overview
+Testing focused on core business functionality of the e-commerce web application.
+
+## Test Execution Summary
+- Total Test Cases: 10
+- Passed: 7
+- Failed: 3
+- Blocked: 0
+
+## Defects Summary
+- High Severity: 2
+- Medium Severity: 1
+- Low Severity: 0
+
+## Key Findings
+- Login redirection issue
+- Missing checkout validation
+- Negative quantity accepted in cart
+
+## Conclusion
+The application contains high-impact issues in login and checkout flow.  
+Fixing these defects is recommended before production release.
