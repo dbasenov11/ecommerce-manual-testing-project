@@ -1,107 +1,83 @@
-Test Plan Template (Manual QA – E-commerce Demo)
-1. Objective
+# Test Plan – E-commerce Web Application
 
-The purpose of this test plan is to validate the core functionality, usability, and reliability of the e-commerce web application.
-The goal is to identify defects that may affect user experience, checkout flow, and data integrity.
+## 1. Objective
 
-2. Scope
-In Scope
+The objective of this test plan is to validate the core functionality, usability, and reliability of the e-commerce web application.  
+The focus is on identifying defects that may impact user experience, business flow integrity, and checkout completion.
 
-User Registration
+---
 
-User Login / Logout
+## 2. Scope
 
-Product Search
+### In Scope
+- User Registration
+- User Login / Logout
+- Product Search & Filtering
+- Product Details Page
+- Add to Cart
+- Update Cart
+- Remove from Cart
+- Checkout Process
+- Form Validation
 
-Product Details Page
+### Out of Scope
+- Performance Testing
+- Security Testing
+- Payment Gateway Integration (real transactions)
+- Mobile Application Testing
 
-Add to Cart
+---
 
-Update Cart
+## 3. Test Strategy
 
-Checkout Process
+Testing will include:
 
-Form Validations
+- Functional Testing of core business workflows
+- Negative Testing for input validation
+- Boundary Value Analysis
+- Exploratory Testing focused on usability and session handling
 
-Basic UI validation
+---
 
-Out of Scope
+## 4. Test Environment
 
-Performance testing
+- OS: Windows 10
+- Browser: Google Chrome (latest version)
+- Resolution: 1920x1080
+- Test Data: Demo user accounts
 
-Security testing
+---
 
-Payment gateway real transactions
+## 5. Risk Analysis
 
-Mobile app testing (if only web)
+| Risk | Impact | Mitigation |
+|------|--------|------------|
+| Checkout process failure | High | Full end-to-end test coverage |
+| Invalid input handling | Medium | Negative & boundary testing |
+| Session handling issues | Medium | Logout & session expiration tests |
 
-3. Test Strategy
+---
 
-The following testing approaches will be used:
+## 6. Entry Criteria
 
-Functional Testing
+- Application is deployed
+- Environment accessible
+- Test data available
 
-Verification of all main business flows and system behavior.
+---
 
-Negative Testing
+## 7. Exit Criteria
 
-Validation of invalid inputs and unexpected user actions.
+- All high severity defects documented
+- All planned test cases executed
+- Test Summary Report completed
 
-Boundary Value Testing
+---
 
-Testing input limits (e.g., minimum/maximum characters).
+## 8. Deliverables
 
-Exploratory Testing
-
-Session-based exploration to identify edge cases and usability issues.
-
-4. Test Environment
-
-Browser: Chrome (latest version)
-
-OS: Windows 10
-
-Resolution: 1920x1080
-
-Test Data: Demo user accounts
-
-5. Risk Analysis
-Risk	Impact	Mitigation
-Checkout failure	High	Detailed test cases for checkout
-Form validation issues	Medium	Negative & boundary tests
-Session expiration bugs	Medium	Session testing scenarios
-6. Entry Criteria
-
-Application is deployed
-
-Test environment accessible
-
-Requirements are available
-
-7. Exit Criteria
-
-All high severity defects addressed
-
-All planned test cases executed
-
-Test summary report completed
-
-8. Deliverables
-
-Test Plan
-
-Test Cases
-
-Bug Reports
-
-Traceability Matrix
-
-Test Summary Report
-
-9. Assumptions
-
-Application is intended for desktop users
-
-All prices are fixed and not dynamically updated
-
-No real payment processing occurs in demo version
+- Test Plan
+- Test Cases
+- Bug Reports
+- Traceability Matrix
+- Test Summary Report
