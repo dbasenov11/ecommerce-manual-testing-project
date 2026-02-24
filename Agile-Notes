@@ -1,0 +1,22 @@
+# Agile Process Notes for QA Project
+
+## Sprint Planning
+- 1-week sprint cycle for testing new features
+- Each test cycle aligned with story acceptance criteria
+
+## QA Activities per Sprint
+- Test Planning: Define scope for the sprint
+- Test Execution: Run test cases and exploratory testing
+- Bug Reporting: Report defects with severity, priority, and business impact
+- Regression Testing: Verify fixes from previous sprint
+- Test Summary: Deliver report at sprint end
+
+## Integration with Agile Workflow
+- Bugs tracked in GitHub Issues (or Jira)
+- User stories mapped to test cases via Traceability Matrix
+- Sprint reviews provide QA feedback to Product Owner and Dev team
+
+## Business Perspective
+- Focus on revenue-impacting areas (checkout, authentication)
+- Usability issues flagged for UX improvement
+- High-risk defects prioritized to reduce operational impact
