@@ -1,0 +1,16 @@
+# Test Data
+
+| User Type | Username | Email | Password | Notes |
+|-----------|---------|-------|----------|-------|
+| Standard | testuser1 | test1@example.com | Pass1234! | Regular user |
+| Standard | testuser2 | test2@example.com | Pass1234! | Regular user |
+| Guest | guest01 | N/A | N/A | Can browse only |
+| Admin | admin01 | admin@example.com | Admin123! | Has admin privileges |
+
+## Product Data
+
+| Product Name | SKU | Price | Stock | Notes |
+|--------------|-----|-------|-------|------|
+| T-Shirt Blue | TS001 | 25.00 | 100 | Size S/M/L |
+| Sneakers | SNK01 | 80.00 | 50 | Unisex |
+| Laptop Stand | LS001 | 45.00 | 20 | Adjustable height |
