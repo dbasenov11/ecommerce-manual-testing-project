@@ -2,82 +2,73 @@
 
 ## 1. Objective
 
-The objective of this test plan is to validate the core functionality, usability, and reliability of the e-commerce web application.  
-The focus is on identifying defects that may impact user experience, business flow integrity, and checkout completion.
+The objective of this test plan is to validate the core business functionality of the e-commerce web application and ensure that critical user journeys operate reliably and consistently.
+
+Primary focus is placed on revenue-impacting flows such as authentication, cart management, and checkout completion.
 
 ---
 
 ## 2. Scope
 
 ### In Scope
-- User Registration
-- User Login / Logout
-- Product Search & Filtering
+- User Registration & Login
+- Session Management
+- Product Browsing & Search
 - Product Details Page
-- Add to Cart
-- Update Cart
-- Remove from Cart
-- Checkout Process
-- Form Validation
+- Cart Operations (Add, Update, Remove)
+- Checkout Process (Shipping & Order Confirmation)
+- Form Validation & Error Handling
 
 ### Out of Scope
-- Performance Testing
-- Security Testing
-- Payment Gateway Integration (real transactions)
-- Mobile Application Testing
+- Performance & Load Testing
+- Security & Penetration Testing
+- Real Payment Processing Integration
+- Cross-browser testing beyond Chrome
 
 ---
 
-## 3. Test Strategy
+## 3. Test Approach
 
-Testing will include:
+The following testing techniques were applied:
 
-- Functional Testing of core business workflows
-- Negative Testing for input validation
-- Boundary Value Analysis
-- Exploratory Testing focused on usability and session handling
+- Functional Testing of end-to-end business flows
+- Risk-Based Testing prioritizing checkout and authentication
+- Negative Testing for invalid inputs and improper user behavior
+- Boundary Value Analysis for form fields
+- Exploratory Testing sessions targeting usability and session handling
 
 ---
 
-## 4. Test Environment
+## 4. Environment
 
 - OS: Windows 10
-- Browser: Google Chrome (latest version)
+- Browser: Google Chrome (latest stable version)
 - Resolution: 1920x1080
-- Test Data: Demo user accounts
+- Test Data: Pre-created test users & generated test orders
 
 ---
 
-## 5. Risk Analysis
+## 5. Risk Assessment
 
-| Risk | Impact | Mitigation |
-|------|--------|------------|
-| Checkout process failure | High | Full end-to-end test coverage |
-| Invalid input handling | Medium | Negative & boundary testing |
-| Session handling issues | Medium | Logout & session expiration tests |
+| Risk Area | Business Impact | Priority |
+|------------|----------------|----------|
+| Checkout Failure | Revenue Loss | High |
+| Login Issues | User Frustration / Abandonment | High |
+| Cart Calculation Errors | Incorrect Orders | High |
+| Inconsistent Validation | Poor UX | Medium |
 
 ---
 
 ## 6. Entry Criteria
 
-- Application is deployed
-- Environment accessible
+- Application deployed in test environment
+- Core requirements defined
 - Test data available
 
 ---
 
 ## 7. Exit Criteria
 
-- All high severity defects documented
-- All planned test cases executed
-- Test Summary Report completed
-
----
-
-## 8. Deliverables
-
-- Test Plan
-- Test Cases
-- Bug Reports
-- Traceability Matrix
-- Test Summary Report
+- All High severity defects documented
+- 100% execution of planned test cases
+- Test Summary Report delivered
