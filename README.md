@@ -1,75 +1,46 @@
-Project Overview
+# E-commerce Manual QA Project
 
-This repository contains a manual testing project for a demo e-commerce web application.
-The objective was to validate core business flows such as user registration, authentication, cart functionality, and checkout process.
-The testing approach combines functional, negative, boundary, and exploratory testing techniques.
+## Overview
+This repository contains a complete manual QA project for a demo e-commerce web application.  
+The testing effort focuses on core business flows including registration, login, product management, cart operations, and checkout.  
+Testing was conducted in alignment with Agile principles and risk-based approach to ensure high business value coverage.
 
-Application Under Test
+## Application Under Test
+- Type: Web Application  
+- Domain: E-commerce  
+- Features tested: Registration, Authentication, Product Browsing, Cart, Checkout, Search
 
-Type: Web Application
-Domain: E-commerce
+## Testing Approach
+- Functional Testing of critical workflows  
+- Negative Testing for invalid inputs  
+- Boundary Value Analysis for input fields  
+- Exploratory Testing for usability & edge cases  
+- Defects tracked with lifecycle and business impact assessment
 
-Main features tested:
+## Test Artifacts Included
+- Test Plan
+- Test Cases
+- Bug Reports
+- Traceability Matrix
+- Exploratory Testing Notes
+- Test Summary Report
+- Test Data
+- Defect Lifecycle
+- Agile Notes
 
-  Registration & Login
+## Coverage Summary
+- Core business flows fully tested
+- High-risk areas (checkout, login) prioritized
+- Negative & boundary cases applied
 
-  Product browsing
+## Key Findings
+- Checkout form allows empty required fields (Critical)
+- User login does not redirect correctly (High)
+- Cart accepts negative quantities (Medium)
+- Minor UI inconsistencies in product details pages
 
-  Cart management
-
-  Checkout flow
-
-Testing Approach:
-
-Functional testing of main user flows
-
-Negative testing for input validation
-
-Boundary value analysis
-
-Exploratory session focused on usability and edge cases
-
-Test Artifacts Included
-
-
-✔ Test Plan
-
-✔ 20 Test Cases
-
-✔ 8 Bug Reports
-
-✔ Traceability Matrix
-
-✔ Exploratory Testing Notes
-
-✔ Test Summary Report
-
-Coverage Summary
-
-Core business flows were fully covered.
-Negative scenarios were applied to all user input forms.
-High-risk areas such as checkout and session handling were prioritized.
-
-Key Findings:
-
-Inconsistent form validation behavior
-
-Missing error messages for invalid inputs
-
-UI misalignment on product details page
-
-Session not expiring after logout in certain scenarios
-
-
-Risk Assessment
-
-The checkout flow represents the highest business risk due to potential revenue impact.
-Input validation weaknesses may lead to poor user experience.
-
-What Could Be Improved
-
-Add automated regression suite
-
-Introduce cross-browser testing
-
-Improve error message consistency
+## Recommendations
+- Fix Critical & High defects before production release  
+- Implement automated regression suite for repetitive tests  
+- Introduce cross-browser testing for broader coverage  
+- Review usability issues for enhanced user experience
