@@ -1,0 +1,61 @@
+# Bug Reports
+
+---
+
+## BUG-01
+
+**Title:** User is not redirected after successful login  
+**Environment:** Chrome, Windows 10  
+**Severity:** High  
+**Priority:** High  
+
+### Steps to Reproduce:
+1. Open login page  
+2. Enter valid credentials  
+3. Click Login  
+
+### Expected Result:
+User should be redirected to account dashboard.
+
+### Actual Result:
+User remains on login page without error message.
+
+---
+
+## BUG-02
+
+**Title:** No validation message when submitting empty checkout form  
+**Environment:** Chrome, Windows 10  
+**Severity:** High  
+**Priority:** High  
+
+### Steps:
+1. Add product to cart  
+2. Proceed to checkout  
+3. Leave required fields empty  
+4. Click Confirm  
+
+### Expected:
+Validation errors displayed.
+
+### Actual:
+Page refreshes without feedback.
+
+---
+
+## BUG-03
+
+**Title:** Cart allows negative quantity value  
+**Severity:** Medium  
+**Priority:** Medium  
+
+### Steps:
+1. Add product to cart  
+2. Enter "-1" as quantity  
+3. Update cart  
+
+### Expected:
+System prevents invalid quantity.
+
+### Actual:
+Cart accepts negative value.
