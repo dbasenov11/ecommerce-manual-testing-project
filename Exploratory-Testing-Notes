@@ -1,0 +1,19 @@
+# Exploratory Testing Notes
+
+## Session Charter:
+Evaluate usability and error handling across main user journey.
+
+## Areas Explored:
+- Registration & login flow
+- Cart behavior
+- Checkout validation
+- Search functionality
+
+## Observations:
+- Inconsistent error messaging across forms
+- Session remains active after logout in some cases
+- Minor UI misalignment on product page
+
+## Potential Risks:
+- Checkout validation gaps may impact revenue
+- Poor error handling may reduce user trust
